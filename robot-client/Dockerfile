@@ -15,7 +15,6 @@ COPY ./package.json ./package-lock.json /robot-client/
 RUN npm ci
 
 COPY ./jsconfig.json ./launch.json ./next.config.mjs ./postcss.config.mjs ./eslint.config.mjs ./.env* /robot-client/
-COPY ./public /robot-client/public
 COPY ./src /robot-client/src
 
 EXPOSE $port
